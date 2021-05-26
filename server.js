@@ -12,14 +12,9 @@ connectDB();
 const corsOptions = {
     origin: process.env.ALLOWED_CLIENTS.split(',')
 }
-<<<<<<< HEAD
+
 app.use(cors());
 app.options('*', cors());
-
-const connectDB = require('./config/db');
-connectDB();
-=======
->>>>>>> 583a9df747a05cc0082e0f0e5c357a8473effce5
 
 app.use(express.static('public'));
 
